@@ -1,3 +1,6 @@
 [submodule "123"]
 	path = 123
 	url = https://github.com/qi-interactive/behaviors.git
+[submodule "web/behaviors"]
+	path = web/behaviors
+	url = https://wichura@github.com/qi-interactive/behaviors.git
