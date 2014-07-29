@@ -1,0 +1,75 @@
+  <html>
+
+  <head>
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+    if("undefined"==typeof jQuery)throw new Error("Behaviors requires jQuery");!function(a){a.fn.behavior=function(a){return qi.behaviors[a].apply(this,Array.prototype.slice.call(arguments,1))},a.fn.addBehavior=function(a,b){try{qi.behaviors}catch(c){qi=window.qi||{},qi.behaviors=qi.behaviors||[]}qi.behaviors[a]=b}}(jQuery),$.fn.addBehavior("sticky-footer",function(a){this.parent().addClass("b-sticky-footer-container");var b=$(a?a:"#main");if(0==b.length)throw"[Sticky Footer behavior] contentContainer not found: "+a;return b.addClass("b-sticky-footer-content"),this}),$(window).ready(function(){$(".sticky-footer").behavior("sticky-footer")});
+
+    </script>
+  </head>
+
+  <body>
+
+
+  	<style>
+
+  		html, body {
+  			margin: 0px;
+  			padding: 0px;
+  			min-height: 100%;
+  		}
+
+  		footer {
+  			width: 100%;
+  			background: #000;
+  			color: #FFF;
+  			padding: 1.5rem;
+  		}
+
+      .b-sticky-footer-content{flex:1}.b-sticky-footer-container{display:flex;flex-direction:column}
+
+  	</style>
+
+
+  	<header>
+  		<h1>This is a header</h1>
+  	</header>
+
+    <div id="main">
+      <p>Click the button below to hide the contents of this page. Notice how the footer sticks to the bottom of the window even when there's not enough content to fill the page.</p>
+
+
+      <button onclick="$('#content').toggle()">Toggle</button>
+      <div id="content">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic iusto vitae in ipsum, maxime, tempora voluptatibus neque repellat illum culpa, modi tempore fuga illo quisquam sequi laudantium. Consequuntur, molestiae.</p>
+     </div>
+
+   </div>
+
+   <footer class="sticky-footer">
+    <p>This is a footer</p>
+  </footer>
+
+  
+
+</body>
+
+</html>

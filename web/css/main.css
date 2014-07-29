@@ -1,0 +1,46 @@
+body {
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #000000;
+  font-family: "jaf-bernina-sans", sans-serif;
+}
+a,
+a:active,
+a:visited {
+  color: #ea483e;
+}
+a.btn-success {
+  color: #51711b;
+  border-color: #51711b;
+  background-color: #ffffff;
+}
+a.btn-success:hover {
+  background-color: #51711b;
+}
+footer {
+  margin-top: 100px;
+}
+.navbar-inverse {
+  background-color: #ea483e;
+  border-bottom: none;
+}
+.navbar-inverse a,
+.navbar-inverse a.navbar-brand {
+  color: #FFF;
+}
+.navbar-inverse .navbar-nav li > a {
+  color: #FFF;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #5eb3ef;
+}

@@ -1,0 +1,50 @@
+@import (reference) "variables.less";
+
+body {
+	background-color: @background-light;
+}   
+
+h1, h2, h3, h4, h5, h6, p, a {
+	color: @text-color;
+	font-family: @primary-font-family;
+} 
+
+a, a:active, a:visited {
+	color: @theme-red;
+}
+
+a.btn-success {
+	color: @theme-green;
+	border-color: @theme-green;
+	background-color: @background-light;
+ 
+	&:hover {
+		background-color: @theme-green;
+	}
+}
+
+
+footer {
+	margin-top: 100px;
+}
+
+.navbar-inverse {
+	background-color: @theme-red;
+	border-bottom: none;  
+
+	a, a.navbar-brand { 
+		color: #FFF;
+	}
+
+
+	.navbar-nav {
+
+		li > a {
+			color: #FFF;
+		}
+
+		& > .active > a, & > .active > a:hover, & > .active > a:focus {
+			background-color: @theme-blue;
+		}
+	}
+} 
